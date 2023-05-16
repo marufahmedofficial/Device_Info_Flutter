@@ -1,7 +1,7 @@
-import '../../api/platform_indentify.dart';
-import '../infos/device_info_page.dart';
-import '../infos/application_info_page.dart';
-import '../infos/network_info_page.dart';
+import 'package:device_info_flutter/page/info/application_info_page.dart';
+import 'package:device_info_flutter/page/info/device_info_page.dart';
+import 'package:device_info_flutter/page/info/network_info_page.dart';
+import 'api/platform_indentify.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {

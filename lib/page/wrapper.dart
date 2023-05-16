@@ -1,6 +1,6 @@
 import '../api/network_info_api.dart';
 import '../api/platform_indentify.dart';
-import 'home/home_page.dart';
+import '../home_page.dart';
 import 'package:flutter/material.dart';
 
 class Wrapper extends StatelessWidget {
