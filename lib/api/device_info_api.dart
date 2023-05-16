@@ -98,8 +98,8 @@ class DeviceInfoApi {
   static Map<String, dynamic> _readAndroidBuildData(AndroidDeviceInfo info) {
 
     return <String, dynamic>{
-      'device': info.device,
-      'brand': info.brand,
+      'Device': info.device,
+      'Brand': info.brand,
       'isPhysicalDevice': info.isPhysicalDevice,
       'version.sdkInt': info.version.sdkInt,
       'manufacturer': info.manufacturer,
