@@ -25,11 +25,11 @@ class _HomePageState extends State<HomePage> {
             padding: EdgeInsets.zero,
             children: [
               const UserAccountsDrawerHeader(
-                accountName: Text('Flutter Approach'),
-                accountEmail: Text('Md. Sabik Alam Rahat'),
+                accountName: Text('Maruf Ahmed'),
+                accountEmail: Text('Made with Flutter'),
                 currentAccountPicture: CircleAvatar(
                   backgroundImage: AssetImage(
-                    "assets/app-icon-1024x1024.png",
+                    "assets/Maruf Ahmed.jpg",
                   ),
                 ),
               ),
@@ -78,9 +78,6 @@ class _HomePageState extends State<HomePage> {
                 ? const ApplicationInfoPage()
                 : index == 3
                     ? const NetworkInfoPage()
-                    : const Center(
-                        child: Text(
-                            'Hello there..!\nIf you can see this text you\'re genius.😜',
-                            textAlign: TextAlign.center)));
+                    : const Center());
   }
 }
