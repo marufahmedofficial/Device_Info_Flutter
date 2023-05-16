@@ -95,8 +95,8 @@ class DeviceInfoApi {
       return <String, dynamic>{'Error:': 'Failed to get platform version.'};
     }
   }
-
   static Map<String, dynamic> _readAndroidBuildData(AndroidDeviceInfo info) {
+
     return <String, dynamic>{
       'device': info.device,
       'brand': info.brand,
@@ -125,7 +125,7 @@ class DeviceInfoApi {
       'supportedAbis': info.supportedAbis,
       'tags': info.tags,
       'type': info.type,
-      'androidId': info.androidId,
+      // 'androidId': info.androidId,
       'systemFeatures': info.systemFeatures,
     };
   }
