@@ -1,6 +1,7 @@
 import 'package:device_info_flutter/page/info/application_info_page.dart';
 import 'package:device_info_flutter/page/info/device_info_page.dart';
 import 'package:device_info_flutter/page/info/network_info_page.dart';
+import 'package:flutter/cupertino.dart';
 import 'api/platform_indentify.dart';
 import 'package:flutter/material.dart';
 
@@ -18,6 +19,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          centerTitle: true,
           title: Text('${PlatformIndentify.device}\'s Info'),
         ),
         drawer: Drawer(
@@ -36,7 +38,7 @@ class _HomePageState extends State<HomePage> {
               ListTile(
                 selectedColor: Colors.blue,
                 selected: index == 1,
-                leading: const Icon(Icons.device_unknown_rounded),
+                leading: const Icon(CupertinoIcons.device_phone_portrait),
                 title: const Text('Device Info'),
                 onTap: () {
                   Navigator.pop(context);
@@ -48,7 +50,7 @@ class _HomePageState extends State<HomePage> {
               ListTile(
                 selectedColor: Colors.blue,
                 selected: index == 2,
-                leading: const Icon(Icons.contact_support_outlined),
+                leading: const Icon(CupertinoIcons.info_circle_fill),
                 title: const Text('Application Info'),
                 onTap: () {
                   Navigator.pop(context);
@@ -60,7 +62,7 @@ class _HomePageState extends State<HomePage> {
               ListTile(
                 selectedColor: Colors.blue,
                 selected: index == 3,
-                leading: const Icon(Icons.network_check_rounded),
+                leading: const Icon(CupertinoIcons.wifi),
                 title: const Text('Network Info'),
                 onTap: () {
                   Navigator.pop(context);
